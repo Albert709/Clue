@@ -1,0 +1,31 @@
+{
+  "evidencia": [
+    {
+      "personajes": {
+        "Rojo": false,
+        "Verde": false,
+        "Azul": false,
+        "Amarillo": false,
+        "Rosa": false
+      }
+    },
+    {
+      "locaciones": {
+        "patio": false,
+        "terraza": false,
+        "casa": false,
+        "fuente": false,
+        "banqueta": false
+      }
+    },
+    {
+      "armas": {
+        "pistola": false,
+        "cuchilo": false,
+        "navaja": false,
+        "tubo": false,
+        "palo": false
+      }
+    }
+  ]
+}
