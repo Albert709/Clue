@@ -42,7 +42,7 @@ def buscar(sospechosos,revisar,tipo):
         y=1
         return y
     else:
-        print("\nInsertar el numero de la opcion\n")
+        print("\nInsertar el número de la opcion\n")
         y=0
         return y
 
@@ -96,7 +96,7 @@ informacion: dict = cargar_base_de_datos('clue_base_de_datos.json')
 informacion2: dict = cargar_base_de_datos('clue_base_de_datos.json')
 
 
-#Se cambio un valor de cada categoria a True para denotar el asesino, el lugar y el arma#
+#Se cambio un valor de cada categoria a True para denotar el asesino, el lugar y el arma
 personajes = informacion['evidencia'][0]['personajes']
 asesino = random.choice(list(personajes.keys()))
 informacion["evidencia"][0]["personajes"][asesino] = True    
@@ -111,7 +111,7 @@ informacion["evidencia"][2]["armas"][arma_homicida] = True
 ##
 
 
-#Se crean los testimonios de los inocentes, y la informacion del culpable, el arma y el lugar#
+#Se crean los testimonios de los inocentes, y la informacion del culpable, el arma y el lugar
 testimonios={}
 
 personajes2 = informacion2['evidencia'][0]['personajes']
@@ -124,7 +124,7 @@ lugar="Nadie recuerda haber estado en "+escena_crimen
 testimonios[escena_crimen]=6
 arma="Nadie recuerda haber visto o usado el/la "+arma_homicida
 testimonios[arma_homicida]=7
-final_resultado=asesino+" mato a Jose usando "+arma_homicida+" en la/el "+escena_crimen
+final_resultado=asesino+" mato al negro usando "+arma_homicida+" en la/el "+escena_crimen
 
 del informacion2["evidencia"][0]["personajes"][asesino]
 del informacion2["evidencia"][1]["locaciones"][escena_crimen]
